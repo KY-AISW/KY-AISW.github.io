@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>건양대 AI & SW 교육 허브</title>
+  <style>
+    body { margin:0; font-family:'Arial', sans-serif; color:#333; }
+    header { position: relative; height: 60vh; background-image: url('hero.jpg'); background-size: cover; background-position: center; color: white; display:flex; align-items:center; justify-content:center; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
+    header h1 { font-size: 3em; margin:0; }
+    header p { font-size:1.5em; }
+    nav { position: fixed; top:0; width:100%; background: rgba(0,64,128,0.9); padding: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+    nav ul { list-style: none; margin:0; padding:0; display:flex; justify-content:center; gap:2em; }
+    nav li { }
+    nav a { color:white; text-decoration:none; font-weight:bold; }
+    .container { max-width: 1000px; margin: 0 auto; padding:2em 1em; }
+    .feature { display:flex; flex-wrap:wrap; gap:2em; align-items:center; }
+    .feature img { max-width: 100%; height:auto; border-radius:8px; flex:1 1 300px; }
+    .feature div { flex:1 1 300px; }
+    .btn { background:#0066cc; color:white; padding:0.8em 1.5em; text-decoration:none; border-radius:5px; }
+    footer { background:#004080; color:#eee; text-align:center; padding:2em 1em; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#vision">비전</a></li>
+    <li><a href="#program">프로그램</a></li>
+    <li><a href="#resources">자료</a></li>
+    <li><a href="#contact">연락</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <div>
+    <h1>AI & SW 교육 허브</h1>
+    <p>전공 상관없이, 건양대 학생 모두를 위한 미래 역량 플랫폼</p>
+    <a class="btn" href="#program">프로그램 보기</a>
+  </div>
+</header>
+
+<div class="container">
+  <section id="vision" class="feature">
+    <img src="vision.jpg" alt="비전 이미지">
+    <div>
+      <h2>비전</h2>
+      <p>우리의 목표는 학생들이 AI와 소프트웨어 개발 역량을 갖추고, 창의적이고 주도적으로 기술 변화에 대응하는 것.</p>
+    </div>
+  </section>
+
+  <section id="program" class="feature">
+    <div>
+      <h2>프로그램</h2>
+      <ul>
+        <li>기초 SW 워크샵 (Python, 알고리즘)</li>
+        <li>AI/ML 실습 코스 (TensorFlow, PyTorch 등)</li>
+        <li>웹 & 앱 개발 프로젝트 중심 교육</li>
+      </ul>
+    </div>
+    <img src="programs.jpg" alt="프로그램 이미지">
+  </section>
+
+  <section id="resources">
+    <h2>자료실 & 오픈소스</h2>
+    <p>여기에는 강의 노트, 실습 예제, 영상 자료 등이 포함됩니다. GitHub 저장소에서 모두 공개되어 있으며 누구나 접근 가능합니다.</p>
+    <p><a href="https://github.com/당신의계정/교육저장소" class="btn" target="_blank">GitHub 저장소 열기</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>문의</h2>
+    <p>이메일: example@kyu.ac.kr</p>
+    <p>깃허브: <a href="https://github.com/당신의계정" target="_blank">github.com/당신의계정</a></p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 건양대 AI & SW 교육 허브</p>
+  <p>제작: 학생팀 / 오픈소스 기반</p>
+</footer>
+
+</body>
+</html>

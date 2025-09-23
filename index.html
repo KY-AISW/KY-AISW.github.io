@@ -1,84 +1,236 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>건양대 AI & SW 교육 허브</title>
-  <style>
-    body { margin:0; font-family:'Arial', sans-serif; color:#333; }
-    header { position: relative; height: 60vh; background-image: url('hero.jpg'); background-size: cover; background-position: center; color: white; display:flex; align-items:center; justify-content:center; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
-    header h1 { font-size: 3em; margin:0; }
-    header p { font-size:1.5em; }
-    nav { position: fixed; top:0; width:100%; background: rgba(0,64,128,0.9); padding: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
-    nav ul { list-style: none; margin:0; padding:0; display:flex; justify-content:center; gap:2em; }
-    nav li { }
-    nav a { color:white; text-decoration:none; font-weight:bold; }
-    .container { max-width: 1000px; margin: 0 auto; padding:2em 1em; }
-    .feature { display:flex; flex-wrap:wrap; gap:2em; align-items:center; }
-    .feature img { max-width: 100%; height:auto; border-radius:8px; flex:1 1 300px; }
-    .feature div { flex:1 1 300px; }
-    .btn { background:#0066cc; color:white; padding:0.8em 1.5em; text-decoration:none; border-radius:5px; }
-    footer { background:#004080; color:#eee; text-align:center; padding:2em 1em; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건양대학교 AI & SW 교육 허브</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50">
+     Navigation 
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold">KY</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">건양대학교</h1>
+                        <p class="text-sm text-gray-600">AI & SW 교육 허브</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">홈</a>
+                    <a href="#programs" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">교육과정</a>
+                    <a href="#resources" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">학습자료</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">문의</a>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        수강신청
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<nav>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#vision">비전</a></li>
-    <li><a href="#program">프로그램</a></li>
-    <li><a href="#resources">자료</a></li>
-    <li><a href="#contact">연락</a></li>
-  </ul>
-</nav>
+     Hero Section 
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="mb-6">
+                <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium">
+                    🎓 2025년 신규 교육과정 모집 중
+                </span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                모든 전공의 학생을 위한<br>
+                <span class="text-yellow-300">AI & SW 교육</span>
+            </h1>
+            
+            <p class="text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-90">
+                전공에 상관없이 누구나 쉽게 배울 수 있는 AI와 소프트웨어 교육을 통해<br>
+                미래 사회가 요구하는 디지털 역량을 키워보세요.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+                    무료로 시작하기
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    교육과정 둘러보기
+                </button>
+            </div>
+        </div>
+    </section>
 
-<header id="home">
-  <div>
-    <h1>AI & SW 교육 허브</h1>
-    <p>전공 상관없이, 건양대 학생 모두를 위한 미래 역량 플랫폼</p>
-    <a class="btn" href="#program">프로그램 보기</a>
-  </div>
-</header>
+     Stats Section 
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
+                    <p class="text-gray-600">수강생</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-600 mb-2">20+</div>
+                    <p class="text-gray-600">교육과정</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-purple-600 mb-2">95%</div>
+                    <p class="text-gray-600">만족도</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-orange-600 mb-2">24/7</div>
+                    <p class="text-gray-600">학습 지원</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
-  <section id="vision" class="feature">
-    <img src="vision.jpg" alt="비전 이미지">
-    <div>
-      <h2>비전</h2>
-      <p>우리의 목표는 학생들이 AI와 소프트웨어 개발 역량을 갖추고, 창의적이고 주도적으로 기술 변화에 대응하는 것.</p>
-    </div>
-  </section>
+     Programs Section 
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">교육 프로그램</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    기초부터 심화까지, 체계적인 커리큘럼으로 구성된 다양한 교육과정을 제공합니다.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🤖</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AI 기초 과정</h3>
+                    <p class="text-gray-600 mb-6">
+                        인공지능의 기본 개념부터 머신러닝, 딥러닝까지 단계별로 학습합니다.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li>• Python 프로그래밍 기초</li>
+                        <li>• 머신러닝 알고리즘</li>
+                        <li>• TensorFlow/PyTorch 실습</li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                        자세히 보기
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">💻</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">웹 개발 과정</h3>
+                    <p class="text-gray-600 mb-6">
+                        현대적인 웹 애플리케이션 개발 기술을 실습 중심으로 배웁니다.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li>• HTML/CSS/JavaScript</li>
+                        <li>• React/Vue.js 프레임워크</li>
+                        <li>• 백엔드 API 개발</li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors">
+                        자세히 보기
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">데이터 분석</h3>
+                    <p class="text-gray-600 mb-6">
+                        빅데이터 처리와 분석, 시각화 기술을 체계적으로 학습합니다.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li>• 데이터 수집 및 전처리</li>
+                        <li>• 통계 분석 및 시각화</li>
+                        <li>• 비즈니스 인사이트 도출</li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                        자세히 보기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="program" class="feature">
-    <div>
-      <h2>프로그램</h2>
-      <ul>
-        <li>기초 SW 워크샵 (Python, 알고리즘)</li>
-        <li>AI/ML 실습 코스 (TensorFlow, PyTorch 등)</li>
-        <li>웹 & 앱 개발 프로젝트 중심 교육</li>
-      </ul>
-    </div>
-    <img src="programs.jpg" alt="프로그램 이미지">
-  </section>
+     CTA Section 
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">지금 바로 시작하세요!</h2>
+            <p class="text-xl mb-10 opacity-90">
+                건양대학교 학생이라면 누구나 무료로 수강할 수 있습니다.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    수강 신청하기
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    GitHub 자료실
+                </button>
+            </div>
+        </div>
+    </section>
 
-  <section id="resources">
-    <h2>자료실 & 오픈소스</h2>
-    <p>여기에는 강의 노트, 실습 예제, 영상 자료 등이 포함됩니다. GitHub 저장소에서 모두 공개되어 있으며 누구나 접근 가능합니다.</p>
-    <p><a href="https://github.com/KY-AISW" class="btn" target="_blank">GitHub 저장소 열기</a></p>
-  </section>
-
-  <section id="contact">
-    <h2>Contect</h2>
-    <p>이메일: konyang.swsw@gmail.com</p>
-    <p>깃허브: <a href="https://github.com/KY-AISW" target="_blank">github.com/건양대학교AISW중심대학</a></p>
-  </section>
-</div>
-
-<footer>
-  <p>&copy; 2025 건양대 AI & SW 교육 허브</p>
-  <p>제작: SW전공교육강화실 / 오픈소스 기반</p>
-</footer>
-
+     Footer 
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold">KY</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">건양대학교</h3>
+                            <p class="text-sm text-gray-400">AI & SW 교육 허브</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">
+                        모든 학생이 AI와 SW 역량을 갖춘 미래 인재로 성장할 수 있도록 지원합니다.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">빠른 링크</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">교육과정</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">학습자료</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">공지사항</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">연락처</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📧 konyang.swsw@gmail.com</li>
+                        <li>🔗 <a href="https://github.com/ky-aisw" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li>🏫 건양대학교</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 건양대학교 AI & SW 교육 허브. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
